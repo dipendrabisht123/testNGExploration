@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<test thread-count="5" name="Test1" group-by-instances="true">
+		<classes>
+			<class
+				name="Test.testNGAnnotations">
+				<methods>
+					
+					<include name="sampleTest1">
+						<parameter name="id" value="1" />
+					</include>
+
+					
+					<include name="sampleTest2">
+						<parameter name="id" value="2" />
+					</include>
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test1 -->
+</suite> <!-- Suite1 -->
